@@ -1,15 +1,15 @@
 <script>
-y = prompt("Digite o valor de y: ")
+y = Number(prompt("Digite o valor de y: "))
 
-h = prompt("Digite o valor de h: ")
+h = Number(prompt("Digite o valor de h: "))
 
-t = prompt("Digite o valor de t: ")
+t = Number(prompt("Digite o valor de t: "))
 
-T = prompt("Digite o valor de T: ")
+T = Number(prompt("Digite o valor de T: "))
 
-o = prompt("Digite o valor de o: ")
+o = Number(prompt("Digite o valor de o: "))
 
-r = parseFloat(y) + 5 * 9 / 7 + parseFloat(h) - parseFloat(t) / parseFloat(T) + parseFloat(o) - 5 * 100
+r = y+5*9/7+(h-t/T+o)-5*100
 
 alert ("O resultado é: " + r)
 </script>
