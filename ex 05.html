@@ -1,0 +1,80 @@
+<script>
+
+
+nome = prompt("Digite o seu nome para começar o atendimento!")
+
+valorUsuario = Number(prompt(`Olá ${nome}!
+Digite quanto você tem disponivel para a viagem: `))
+
+
+viagemUsuario = prompt(`Escolha dentre os destinos abaixo, digite o numero do lugar:
+
+1 - Disney
+2 - Madrid
+3 - Maceio
+4 - Ribeirão Preto`)
+
+
+
+
+		switch(viagemUsuario){
+
+case "1":
+
+	if (valorUsuario < 15000){
+	var valorFaltante = 15000 - valorUsuario;
+	alert("Valor insuficiente, falta" + `${valorFaltante}`);
+	}
+
+		else{
+		alert ("Você tem dinheiro suficiente! Boa viagem!")
+		}
+
+break
+
+case "2":
+
+	if (valorUsuario <12000){
+
+	var valorFaltante = 12000 - valorUsuario;
+	alert("Você não tem dinheiro sufuciente, ainda falta"  + `${valorFaltante}`);
+	}	
+		else{
+		alert ("Você já pode viajar!")
+		}
+
+break
+
+case "3":
+
+	if (valorUsuario <8000){
+
+	var valorFaltante = 8000 - valorUsuario;
+	alert("Você não tem dinheiro sufuciente, ainda falta"  + `${valorFaltante}`);
+	}
+		else{
+
+		alert("Você já pode viajar!")
+		}
+
+break
+
+case "4":
+
+	if(valorUsuario <5000){
+	var valorFaltante = 5000 - valorUsuario;
+	alert("Você não tem dinheiro suficiente, ainda falta" + `${valorFaltante}`);
+	}
+		
+		else{
+		
+		alert("Você já pode viajar!")
+
+
+break
+
+}
+
+}
+
+</script>
